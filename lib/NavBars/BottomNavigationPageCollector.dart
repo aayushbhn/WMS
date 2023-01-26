@@ -1,8 +1,8 @@
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:wms/Screens/homepage.dart';
-import 'package:wms/Screens/profilepage.dart';
-import 'package:wms/Screens/verificationpage.dart';
+import 'package:wms/ScreensCollector/homepage.dart';
+import 'package:wms/ScreensCollector/profilepage.dart';
+import 'package:wms/ScreensCollector/verificationpage.dart';
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({Key? key}) : super(key: key);
 

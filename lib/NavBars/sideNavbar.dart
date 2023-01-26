@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:wms/lgoinpage.dart';
 
-import '../Screens/Settings.dart';
+import '../ScreensCollector/Settings.dart';
+import '../ScreensCollector/feedback.dart';
+import 'BottomNavigationPageCollector.dart';
 class sideNav extends StatelessWidget {
   const sideNav({Key? key}) : super(key: key);
 
@@ -29,6 +32,12 @@ class sideNav extends StatelessWidget {
                     image: AssetImage('assets/cover.jpg'))),
           ),
 
+
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigation()))},
+          ),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
@@ -42,12 +51,12 @@ class sideNav extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.border_color),
             title: Text('Feedback'),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsPage()))},
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FeedbackPage()))},
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
-            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsPage()))},
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()))},
           ),
         ],
       ),

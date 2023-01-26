@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:wms/NavBars/BottomNavigationPage.dart';
-import 'package:wms/Screens/homepage.dart';
-import 'package:wms/Screens/homepage.dart';
+import 'package:wms/NavBars/BottomNavigationPageCollector.dart';
+
+
+import 'ScreensCollector/splash.dart';
 void main() {
-  runApp(MyApp());
+  runApp(MyApp(
+
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Waste Recyclers',
-      home:BottomNavigation(),
+      home:SplashScreen(
+
+      ),
     );
   }
 }

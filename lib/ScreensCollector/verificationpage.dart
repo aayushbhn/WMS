@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wms/NavBars/sideNavbar.dart';
 
-import '../NavBars/BottomNavigationPage.dart';
+import '../NavBars/BottomNavigationPageCollector.dart';
 class VerificationPage extends StatefulWidget {
   const VerificationPage({Key? key}) : super(key: key);
 
