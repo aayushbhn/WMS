@@ -68,12 +68,14 @@ class _homepageState extends State<homepage> {
                     painter: LinePainter(),
                     child: Text(
 
+
                       "User Location and Information is displayed here. ",
                       textAlign: TextAlign.center,
 
                     ),
                   ),
                 ),
+
 
               ),
             ),

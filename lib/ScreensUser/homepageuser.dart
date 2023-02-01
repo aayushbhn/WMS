@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                 } else if (index == 1) {
                   message = "You have sold this on June at a price of Rs. 5 per kg.";
                 } else if (index==2){
-                  message = "You have sold this on Juky at a price of Rs. 3 per kg.";
+                  message = "You have sold this on July at a price of Rs. 3 per kg.";
                 }
                 else {
                   message="You have sold this on April at a price of Rs. 6 per kg.";
